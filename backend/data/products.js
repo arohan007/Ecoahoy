@@ -1,6 +1,6 @@
 const products = [
   {
-    _id: '1',
+    
     name: 'Pee Safe:Organic Bamboo Pads',
     image: '/images/Organic_bamboo_Pads.jpeg',
     description:
@@ -13,7 +13,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
+    
     name: 'Sanitiser',
     image: '/images/Sanitiser.jpeg',
     description:
@@ -26,7 +26,7 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
+    
     name: 'Dent Tabs:Organic Bamboo Brush',
     image: '/images/Organic_bamboo_brush.jpeg',
     description:
@@ -39,7 +39,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
+    
     name: 'Sanfe Cloth Mask',
     image: '/images/Reusable_Mask.jpeg',
     description:
@@ -52,7 +52,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
+   
     name: 'PPE Kit',
     image: '/images/ppe_kit.jpeg',
     description:
@@ -65,7 +65,7 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
+    
     name: 'Recyclable Coffee Mug',
     image: '/images/Recyclable_coffee_mug.jpeg',
     description:
