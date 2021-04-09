@@ -90,6 +90,7 @@ const CartScreen = ({ match, location, history }) => {
                 items
               </h2>
               ₹
+
               {cartItems
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
                 .toFixed(2)}
