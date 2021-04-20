@@ -56,7 +56,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
         ? error.response.data.message
         : error.message
     if (message === 'Not authorized, token failed') {
-      dispatch(logout())
+       dispatch(logout())
     }
     dispatch({
       type: ORDER_CREATE_FAIL,
@@ -138,7 +138,7 @@ export const payOrder = (orderId, paymentResult) => async (
         ? error.response.data.message
         : error.message
     if (message === 'Not authorized, token failed') {
-      dispatch(logout())
+       dispatch(logout())
     }
     dispatch({
       type: ORDER_PAY_FAIL,
@@ -179,7 +179,7 @@ export const deliverOrder = (order) => async (dispatch, getState) => {
         ? error.response.data.message
         : error.message
     if (message === 'Not authorized, token failed') {
-      dispatch(logout())
+       dispatch(logout())
     }
     dispatch({
       type: ORDER_DELIVER_FAIL,

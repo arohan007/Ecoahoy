@@ -6,7 +6,7 @@ import {
   PRODUCT_DETAILS_REQUEST,
   PRODUCT_DETAILS_SUCCESS,
   PRODUCT_DETAILS_FAIL,
- /* PRODUCT_DELETE_SUCCESS,
+  PRODUCT_DELETE_SUCCESS,
   PRODUCT_DELETE_REQUEST,
   PRODUCT_DELETE_FAIL,
   PRODUCT_CREATE_REQUEST,
@@ -20,9 +20,9 @@ import {
   PRODUCT_CREATE_REVIEW_FAIL,
   PRODUCT_TOP_REQUEST,
   PRODUCT_TOP_SUCCESS,
-  PRODUCT_TOP_FAIL,*/
+  PRODUCT_TOP_FAIL,
 } from '../constants/productConstants'
-//import { logout } from './userActions'
+import { logout } from './userActions'
 
 export const listProducts = (keyword = '', pageNumber = '') => async (
   dispatch
@@ -71,7 +71,7 @@ export const listProductDetails = (id) => async (dispatch) => {
   }
 }
 
-/*export const deleteProduct = (id) => async (dispatch, getState) => {
+export const deleteProduct = (id) => async (dispatch, getState) => {
   try {
     dispatch({
       type: PRODUCT_DELETE_REQUEST,
@@ -246,4 +246,4 @@ export const listTopProducts = () => async (dispatch) => {
           : error.message,
     })
   }
-}*/ 
+}

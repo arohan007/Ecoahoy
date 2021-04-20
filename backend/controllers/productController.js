@@ -1,6 +1,7 @@
 import asyncHandler from 'express-async-handler'
 import Product from '../models/productModel.js'
 
+
 // @desc    Fetch all products
 // @route   GET /api/products
 // @access  Public
@@ -42,7 +43,7 @@ const getProductById = asyncHandler(async (req, res) => {
     throw new Error('Product not found')
   }
 })
-/*
+
 // @desc    Delete a product
 // @route   DELETE /api/products/:id
 // @access  Private/Admin
@@ -151,7 +152,7 @@ const createProductReview = asyncHandler(async (req, res) => {
     throw new Error('Product not found')
   }
 })
-
+/*
 // @desc    Get top rated products
 // @route   GET /api/products/top
 // @access  Public
@@ -163,10 +164,10 @@ const getTopProducts = asyncHandler(async (req, res) => {
 */
 export {
   getProducts,
-  getProductById
-  /*deleteProduct,
+  getProductById,
+  deleteProduct,
   createProduct,
   updateProduct,
   createProductReview,
-  getTopProducts,*/
+  /*getTopProducts,*/
 }
